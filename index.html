@@ -10,14 +10,112 @@
 
     <!-- Bootstrap CSS -->
   <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+
+    <link href="css/style.css" type="text/css" rel="stylesheet">
     <title>pioneer Bank</title>
 </head>
 <body>
 
 
 
+        <div id="loginArea">
 
+            <h1 class="title text-center"> Welcome To Pioneer Bank  </h1>
+             <div class="container ">
+                 <div class="row">
+
+                     <div class="col-sm-6 col-md-8 col-lg-12">
+                 <form action="" method="post">
+
+                 <h4 class="text-center">Log in</h4>
+                <div class="mb-3">
+
+                    <label for="Email" class="form-label">Email</label>
+                    <input id="Email" class="form-control" type="Email" placeholder="Enter Your Email">
+
+                </div>
+
+                     <div class="mb-3">
+
+                         <label for="Password" class="form-label">Password</label>
+                         <input id="Password" class="form-control" type="password" placeholder="Enter Your password">
+
+                     </div>
+
+                     <div class="mb-3">
+
+
+                         <button id="submit" class="btn btn-success" type="button" value="submit">submit</button>
+
+                     </div>
+                 </form>
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+
+
+
+        <div id="transaction-Area">
+
+
+
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-lg-3 col-md-4 bg-warning text-center m-4 text-white Deposit">
+
+                    <h3>Deposit</h3>
+                   <h4><span id="deposit">$00</span></h4>
+
+                </div>
+
+                <div class="col-lg-3 col-md-4 btn-danger text-center m-4 text-white Withdraw">
+
+                    <h3>Withdraw</h3>
+                    <h4><span id="withdraw">$00</span></h4>
+
+                </div>
+                <div class="col-lg-3 col-md-4 btn-success text-center m-4 text-white Balance" >
+
+
+                    <h3>Balance</h3>
+
+                    <h4><span id="balance">$00</span></h4>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        <div class="row  m-4 text-center" id="DepositAndWithdraw">
+            <div class="col-md-5 col-lg-6 DepositAndWithdraw">
+                <h1>Deposit</h1>
+
+                <input type="text"class="form-control" id="depositMoney" placeholder="Enter Deposit money">
+                    <button id="addMoney" class="btn btn-warning btn-lg mt-2 form-control">Add</button>
+
+            </div>
+            <div class="col-md-5 col-lg-6 DepositAndWithdraw">
+                <h1>Withdraw</h1>
+
+                <input type="text" id="withdrawMoney" class="form-control" placeholder="Enter Withdraw money">
+                <button id="wdrawMoney" class="btn btn-danger btn-lg mt-2 form-control">Add</button>
+
+            </div>
+        </div>
+
+
+
+        </div>
+
+
+        <script src="js/custom.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
+
 
 </body>
 </html>
